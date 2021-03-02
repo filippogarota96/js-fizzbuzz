@@ -3,10 +3,19 @@
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
 
-// Stampo numeri da 1 a cento
+// Stampo numeri da 1 a 100
 
 var numeri;
 
 for ( var numeri = 1; numeri <= 100; numeri++) {
+  if (numeri % 3 == 0) {
+    numeri = "Fizz";
+  }
+  if (numeri % 5 == 0) {
+    numeri = "Buzz";
+  }
+  if (numeri % 3 == 0 && numeri % 5 == 0) {
+    numeri = "FizzBuzz";
+  }
   console.log(numeri);
 }
