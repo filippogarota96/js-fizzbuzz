@@ -7,15 +7,14 @@
 
 var numeri;
 
-for ( var numeri = 1; numeri <= 100; numeri++) {
-  if (numeri % 3 == 0) {
-    numeri = "Fizz";
+for (numeri = 1; numeri <= 100; numeri++) {
+  if ((numeri % 3 == 0) && (numeri % 5 == 0)) {
+    console.log('FizzBuzz');
+  } else if (numeri % 5 == 0) {
+    console.log('Buzz');
+  } else if (numeri % 3 == 0) {
+    console.log('Fizz');
+  } else {
+    console.log(numeri);
   }
-  if (numeri % 5 == 0) {
-    numeri = "Buzz";
-  }
-  if (numeri % 3 == 0 && numeri % 5 == 0) {
-    numeri = "FizzBuzz";
-  }
-  console.log(numeri);
 }
